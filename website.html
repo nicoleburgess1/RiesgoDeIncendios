@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id= "bgcolor" >
+    <div>
+      <img src="fp.png" style="height: 10vw; max-height: 80px; position: absolute; top: 5px; left: 5px; min-height: 50px;">
+      <img src="cerrito.jpeg" style="height: 10vw; max-height: 80px; position: absolute; top: 5px; right: 5px; border-radius: 10px; min-height: 50px;">
+    </div>
+    <div class="center">
+      <h1 style="font-size:4vh;">La Escuela Agr&iacute;cola Cerrito</h1>
+      <h2 style="font-size:3vh;">Riesgo de Incendios</h2>
+      <h3 style="font-size:2vh;">En caso de incendio llamar al 132</h3>
+    </div>
+    <div class="wrapper">
+      <div>
+        <h3>Ingresar la cantidad de lluvia de las &uacute;ltimas 24 horas (mil&iacute;metros)</h3>
+        <div class="search-container">
+          <input
+            type="number"
+            placeholder="precipitaci&oacute;n de las &uacute;ltimas 24 horas (mm)"
+            id="rain"
+            value="0"
+            style="text-align: center;"
+          />
+          <button id="search-btn" onclick="">Ingresar</button>
+        </div>
+        <div id="result"></div>
+      </div>
+    </div>
+    
+    <!-- Script -->
+    <script src="key.js"></script>
+    <script src="script.js"></script>
+    <div>
+      
+    </div>
+  </body>
+</html>
+
+<!-- Fire Risk = (0.20 x Temperature - 0.30 x Humidity + 0.25 x Wind Speed + 0.25 x (100 - Rainfall)) -->
